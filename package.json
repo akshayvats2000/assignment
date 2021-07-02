@@ -1,0 +1,26 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config src/index.js dotenv_config_path=./src/config/.env",
+    "dev": "nodemon -r dotenv/config src/index.js dotenv_config_path=./src/config/.env",
+    "sass-watch": "sass --watch src/assets/scss:src/assets/css",
+    "all-as-dev": "concurrently \"npm run dev\" \"npm run sass-watch\"",
+    "all-as-prod": "concurrently \"npm start\" \"npm run sass-watch\""
+  },
+  "keywords": [],
+  "author": "Akshay Vats",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^5.12.15",
+    "sass": "^1.35.1"
+  }
+}

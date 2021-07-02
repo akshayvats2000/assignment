@@ -1,0 +1,168 @@
+footer div#section-one {
+  background-color: whitesmoke;
+  padding: 50px 80px;
+  text-align: center;
+  font-size: 0.9em;
+}
+footer div#section-one p a {
+  text-decoration: none;
+  color: initial;
+  display: inline-block;
+  font-weight: normal;
+}
+footer div#section-one p a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fa7328;
+  transition: width 0.4s;
+}
+footer div#section-one p a:hover {
+  color: #fa7328;
+}
+footer div#section-one p a:hover::after {
+  width: 100%;
+}
+footer div#section-one p:not(:last-child) {
+  margin-bottom: 25px;
+}
+footer div#section-two {
+  padding: 50px 100px;
+  background: linear-gradient(90deg, #614b68, #423963);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+footer div#section-two div#part-one {
+  display: flex;
+}
+footer div#section-two div#inner-part-two {
+  display: flex;
+}
+footer div#section-two div#inner-part-two div.footer-list {
+  margin-left: 80px;
+}
+footer div#section-two div#inner-part-two div.footer-list ul {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+footer div#section-two div#inner-part-two div.footer-list ul a {
+  text-decoration: none;
+  color: white;
+}
+footer div#section-two div#inner-part-two div.footer-list ul a li {
+  font-weight: normal;
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+footer div#section-two div#inner-part-two div.footer-list ul a li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #fa7328;
+  transition: width 0.4s;
+}
+footer div#section-two div#inner-part-two div.footer-list ul a li:hover {
+  color: #fa7328;
+}
+footer div#section-two div#inner-part-two div.footer-list ul a li:hover::after {
+  width: 100%;
+}
+footer div#section-two div#part-two div#text {
+  margin-bottom: 20px;
+}
+footer div#section-two div#part-two div#social-media a {
+  text-decoration: none;
+}
+footer div#section-two div#part-two div#social-media a:not(:last-child) {
+  margin-right: 10px;
+}
+footer div#section-three {
+  padding: 20px 100px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+}
+footer div#section-three div#part-one {
+  display: flex;
+  align-items: center;
+}
+footer div#section-three div#part-one div#payment-options img {
+  height: 20px;
+  padding-left: 20px;
+}
+footer div#section-three div#part-two img {
+  height: 23px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1310px) {
+  footer div#section-two {
+    flex-direction: column;
+  }
+  footer div#section-three {
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  footer div#section-three {
+    flex-direction: column;
+  }
+  footer div#section-three div#part-two {
+    align-self: flex-end;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  footer div#section-one {
+    text-align: left;
+  }
+  footer div#section-two div#part-one {
+    display: block;
+  }
+  footer div#section-two div#part-one div#inner-part-one {
+    margin-bottom: 30px;
+  }
+  footer div#section-two div#part-one div#inner-part-two {
+    justify-content: space-between;
+  }
+  footer div#section-two div#part-one div#inner-part-two div.footer-list {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 660px) {
+  footer div#section-two div#part-one div#inner-part-two {
+    flex-direction: column;
+  }
+  footer div#section-three div#part-one {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer div#section-three div#part-one p {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer div#section-one {
+    padding: 25px 20px;
+  }
+  footer div#section-two {
+    padding: 25px 20px;
+  }
+  footer div#section-three {
+    padding: 10px 10px;
+  }
+  footer div#section-three div#part-one div#payment-options img {
+    height: 15px;
+    padding-left: 15px;
+  }
+  footer div#section-three div#part-two img {
+    height: 15px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

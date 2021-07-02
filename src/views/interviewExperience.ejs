@@ -1,0 +1,555 @@
+<link rel="stylesheet" href="/css/interviewExperience.css">
+<main>
+    <section class="main-content">
+        <div id="popular-companies">
+            <h3>experience of popular companies</h3>
+            <div id="companies">
+                <div class="company-card">
+                    <img src="https://files.codingninjas.in/amazon-ps-4659.svg" alt="Amazon">
+                </div>
+                <div class="company-card">
+                    <img src="https://files.codingninjas.in/samsung-ps-4658.svg" alt="Samsung">
+                </div>
+                <div class="company-card">
+                    <img src="https://files.codingninjas.in/microsoft-ps-4657.svg" alt="Microsoft">
+                </div>
+                <div class="company-card">
+                    <img src="https://files.codingninjas.in/goldman-ps-4656.svg" alt="Goldman">
+                </div>
+            </div>
+        </div>
+        <div id="interview-experiences">
+            <h3>interview experiences</h3>
+            <h4>Share Your Interview Experience</h4>
+        </div>
+        <div id="filters">
+            <div id="part-one">
+                <div class="filter" id="filter-filterCompanies"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-company.svg" alt="Company Logo">&nbsp;<h4>Company</h4>&nbsp;<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg" alt="arrow"></div>
+                <div class="filter" id="filter-roles"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-role.svg" alt="Laptop Icon">&nbsp;<h4>Role</h4>&nbsp;<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg" alt="arrow"></div>
+                <div class="filter" id="filter-locations"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-location.svg" alt="Location Icon">&nbsp;<h4>Locaion</h4>&nbsp;<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg" alt="arrow"></div>
+                <div class="filter" id="filter-moreFilters"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-more.svg" alt="Filter More Icon">&nbsp;<h4>More Filters</h4>&nbsp;<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg" alt="arrow"></div>
+                <div class="filter">Sort By</div>
+            </div>
+            <div id="part-two" class="hidden">
+                <div id="upper">
+                    <div id="search">
+                        <input type="text" placeholder="Search Something...">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/search-icon.svg">
+                    </div>
+                    <h5 id="fliter-close-btn">Close</h5>
+                </div>
+                <div id="lower">
+                    <div id="filterCompanies">
+                        <% companies.forEach(company => { %>
+                            <div>
+                                <span><%= company %> </span>&nbsp;
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/plus-icon.svg">
+                            </div>
+                        <% }) %>
+                    </div>
+                    <div id="roles">
+                        <% roles.forEach(role => { %>
+                            <div>
+                                <span><%= role %> </span>&nbsp;
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/plus-icon.svg">
+                            </div>
+                        <% }) %>
+                    </div>
+                    <div id="locations">
+                        <% locations.forEach(location => { %>
+                            <div>
+                                <span><%= location %> </span>&nbsp;
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/plus-icon.svg">
+                            </div>
+                        <% }) %>
+                    </div>
+                    <div id="moreFilters">
+                        <% moreFilters.forEach(moreFilter => { %>
+                            <div>
+                                <span><%= moreFilter %> </span>&nbsp;
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/plus-icon.svg">
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experience-banners">
+            <div class="banner">
+                <div id="left-side">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">
+                    <p>108</p>
+                    <h6>Upvotes</h6>
+                </div>
+                <div id="right-side">
+                    <div id="title">
+                        <h4>VMWare | Senior Developer | Fresher | Nov 2020</h4>
+                        <img src="https://files.codingninjas.in/vmware-8949.png">
+                    </div>
+                    <div id="middle-box">
+                        <div id="user">
+                            <div id="avatar">
+                                <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                            </div>
+                            <div id="details">
+                                <h5>Shriyansh Gupta</h5>
+                                <div>
+                                    <span>On Campus</span> <span>IIT Delhi</span> <span>9.5 CGPA</span> <span>50 rounds</span> <span>200 Coding Problems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg">&nbsp;
+                            <span>Selected</span>
+                        </div>
+                    </div>
+                    <div id="bottom-box">
+                        <div id="impression">
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                                <h6>280 views</h6>
+                            </div>
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                                <h6>20 Comments</h6>
+                            </div>
+                        </div>
+                        <div id="createdOn">
+                            <h6>Published on 30 Jun 2021</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div id="left-side">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">
+                    <p>2</p>
+                    <h6>Upvotes</h6>
+                </div>
+                <div id="right-side">
+                    <div id="title">
+                        <h4>Amazon | Junior Developer | Fresher | Nov 2020</h4>
+                        <img src="https://files.codingninjas.in/0000000000001231.png">
+                    </div>
+                    <div id="middle-box">
+                        <div id="user">
+                            <div id="avatar">
+                                <img src="https://files.codingninjas.com/ninja-user-4-9526.svg">
+                            </div>
+                            <div id="details">
+                                <h5>Anonymous</h5>
+                                <div>
+                                    <span>On Campus</span> <span>KIET College</span> <span>7 CGPA</span> <span>2 rounds</span> <span>8 Coding Problems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-rejected.svg">&nbsp;
+                            <span>Rejected</span>
+                        </div>
+                    </div>
+                    <div id="bottom-box">
+                        <div id="impression">
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                                <h6>100 views</h6>
+                            </div>
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                                <h6>18 Comments</h6>
+                            </div>
+                        </div>
+                        <div id="createdOn">
+                            <h6>Published on 30 Jun 2021</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div id="left-side">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">
+                    <p>108</p>
+                    <h6>Upvotes</h6>
+                </div>
+                <div id="right-side">
+                    <div id="title">
+                        <h4>VMWare | Senior Developer | Fresher | Nov 2020</h4>
+                        <img src="https://files.codingninjas.in/vmware-8949.png">
+                    </div>
+                    <div id="middle-box">
+                        <div id="user">
+                            <div id="avatar">
+                                <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                            </div>
+                            <div id="details">
+                                <h5>Shriyansh Gupta</h5>
+                                <div>
+                                    <span>On Campus</span> <span>IIT Delhi</span> <span>9.5 CGPA</span> <span>50 rounds</span> <span>200 Coding Problems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg">&nbsp;
+                            <span>Selected</span>
+                        </div>
+                    </div>
+                    <div id="bottom-box">
+                        <div id="impression">
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                                <h6>280 views</h6>
+                            </div>
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                                <h6>20 Comments</h6>
+                            </div>
+                        </div>
+                        <div id="createdOn">
+                            <h6>Published on 30 Jun 2021</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div id="left-side">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">
+                    <p>2</p>
+                    <h6>Upvotes</h6>
+                </div>
+                <div id="right-side">
+                    <div id="title">
+                        <h4>Amazon | Junior Developer | Fresher | Nov 2020</h4>
+                        <img src="https://files.codingninjas.in/0000000000001231.png">
+                    </div>
+                    <div id="middle-box">
+                        <div id="user">
+                            <div id="avatar">
+                                <img src="https://files.codingninjas.com/ninja-user-4-9526.svg">
+                            </div>
+                            <div id="details">
+                                <h5>Anonymous</h5>
+                                <div>
+                                    <span>On Campus</span> <span>KIET College</span> <span>7 CGPA</span> <span>2 rounds</span> <span>8 Coding Problems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-rejected.svg">&nbsp;
+                            <span>Rejected</span>
+                        </div>
+                    </div>
+                    <div id="bottom-box">
+                        <div id="impression">
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                                <h6>100 views</h6>
+                            </div>
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                                <h6>18 Comments</h6>
+                            </div>
+                        </div>
+                        <div id="createdOn">
+                            <h6>Published on 30 Jun 2021</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div id="left-side">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">
+                    <p>108</p>
+                    <h6>Upvotes</h6>
+                </div>
+                <div id="right-side">
+                    <div id="title">
+                        <h4>VMWare | Senior Developer | Fresher | Nov 2020</h4>
+                        <img src="https://files.codingninjas.in/vmware-8949.png">
+                    </div>
+                    <div id="middle-box">
+                        <div id="user">
+                            <div id="avatar">
+                                <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                            </div>
+                            <div id="details">
+                                <h5>Shriyansh Gupta</h5>
+                                <div>
+                                    <span>On Campus</span> <span>IIT Delhi</span> <span>9.5 CGPA</span> <span>50 rounds</span> <span>200 Coding Problems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg">&nbsp;
+                            <span>Selected</span>
+                        </div>
+                    </div>
+                    <div id="bottom-box">
+                        <div id="impression">
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                                <h6>280 views</h6>
+                            </div>
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                                <h6>20 Comments</h6>
+                            </div>
+                        </div>
+                        <div id="createdOn">
+                            <h6>Published on 30 Jun 2021</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div id="left-side">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">
+                    <p>2</p>
+                    <h6>Upvotes</h6>
+                </div>
+                <div id="right-side">
+                    <div id="title">
+                        <h4>Amazon | Junior Developer | Fresher | Nov 2020</h4>
+                        <img src="https://files.codingninjas.in/0000000000001231.png">
+                    </div>
+                    <div id="middle-box">
+                        <div id="user">
+                            <div id="avatar">
+                                <img src="https://files.codingninjas.com/ninja-user-4-9526.svg">
+                            </div>
+                            <div id="details">
+                                <h5>Anonymous</h5>
+                                <div>
+                                    <span>On Campus</span> <span>KIET College</span> <span>7 CGPA</span> <span>2 rounds</span> <span>8 Coding Problems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-rejected.svg">&nbsp;
+                            <span>Rejected</span>
+                        </div>
+                    </div>
+                    <div id="bottom-box">
+                        <div id="impression">
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                                <h6>100 views</h6>
+                            </div>
+                            <div>
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                                <h6>18 Comments</h6>
+                            </div>
+                        </div>
+                        <div id="createdOn">
+                            <h6>Published on 30 Jun 2021</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div id="events">
+            <div id="title">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/calendar.svg" alt="Calendar">
+                <h3>
+                    Upcoming Events
+                </h3>
+            </div>
+            <div id="event-card">
+                <img src="https://files.codingninjas.in/desktop-version-10684.jpg" alt="Banner">
+                <div id="event-details">
+                    <div id="upper">
+                        <h4>Ninja Career Camp June, 2021</h4>
+                        <div id="timing">
+                            <h6>Starts</h6>
+                            <h5>11:59 PM, 27 Jun 2021</h5>
+                        </div>
+                    </div>
+                    <div id="lower">
+                        <p>and <span style="color: black;">0</span> others are participating</p>
+                        <h3>Register Now</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="top-interview-experiences">
+            <div id="title">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/puzzle.svg">&nbsp;
+                <h3>Top Interview Experiences</h3>
+            </div>
+            <div id="banners">
+                <div class="top-banner">
+                    <h3>Samsung | Fresher</h3>
+                    <div id="user">
+                        <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                        <div id="details">
+                            <h4>Sagar Udasi</h4>
+                            <div>
+                                <span>11 months ago</span>
+                                <span>SDE - 1</span>
+                                <span>Ulhasnagar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="impression">
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">&nbsp;
+                            <h6>125 upvotes</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                            <h6>3995 views</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                            <h6>12 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-banner">
+                    <h3>Apple | Fresher</h3>
+                    <div id="user">
+                        <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                        <div id="details">
+                            <h4>Anonymous</h4>
+                            <div>
+                                <span>9 months ago</span>
+                                <span>SDE - 1</span>
+                                <span>Ghaziabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="impression">
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">&nbsp;
+                            <h6>75 upvotes</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                            <h6>2359 views</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                            <h6>5 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-banner">
+                    <h3>Samsung | Fresher</h3>
+                    <div id="user">
+                        <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                        <div id="details">
+                            <h4>Sagar Udasi</h4>
+                            <div>
+                                <span>11 months ago</span>
+                                <span>SDE - 1</span>
+                                <span>Ulhasnagar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="impression">
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">&nbsp;
+                            <h6>125 upvotes</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                            <h6>3995 views</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                            <h6>12 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-banner">
+                    <h3>Apple | Fresher</h3>
+                    <div id="user">
+                        <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                        <div id="details">
+                            <h4>Anonymous</h4>
+                            <div>
+                                <span>9 months ago</span>
+                                <span>SDE - 1</span>
+                                <span>Ghaziabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="impression">
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">&nbsp;
+                            <h6>75 upvotes</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                            <h6>2359 views</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                            <h6>5 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-banner">
+                    <h3>Samsung | Fresher</h3>
+                    <div id="user">
+                        <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                        <div id="details">
+                            <h4>Sagar Udasi</h4>
+                            <div>
+                                <span>11 months ago</span>
+                                <span>SDE - 1</span>
+                                <span>Ulhasnagar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="impression">
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">&nbsp;
+                            <h6>125 upvotes</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                            <h6>3995 views</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                            <h6>12 comments</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-banner">
+                    <h3>Apple | Fresher</h3>
+                    <div id="user">
+                        <img src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+                        <div id="details">
+                            <h4>Anonymous</h4>
+                            <div>
+                                <span>9 months ago</span>
+                                <span>SDE - 1</span>
+                                <span>Ghaziabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="impression">
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upvote-active.svg">&nbsp;
+                            <h6>75 upvotes</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg">&nbsp;
+                            <h6>2359 views</h6>
+                        </div>
+                        <div>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg">&nbsp;
+                            <h6>5 comments</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</main>
+
+<script src="/scripts/interviewExperience.js"></script>

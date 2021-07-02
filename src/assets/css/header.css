@@ -1,0 +1,267 @@
+header {
+  z-index: 2;
+}
+
+header#default {
+  padding: 0 45px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0px 0px 3px #b9b9b9;
+  background-color: white;
+}
+header#default div {
+  display: flex;
+  align-items: center;
+}
+header#default div#part-one a.logo img {
+  height: 25px;
+}
+header#default div#part-one nav {
+  height: 100%;
+  padding: 0 0 0 15px;
+}
+header#default div#part-one nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+}
+header#default div#part-one nav ul a {
+  text-decoration: none;
+  color: initial;
+}
+header#default div#part-one nav ul a li {
+  font-size: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+header#default div#part-one nav ul a li span#new-launch {
+  background-color: #1b75f5;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 80%;
+}
+header#default div#part-one nav ul a li:hover {
+  background-color: #eeeeee;
+}
+header#default div#part-one nav ul a li#top-problem-list {
+  position: relative;
+}
+header#default div#part-one nav ul a li#top-problem-list img {
+  height: 15px;
+  transition: all 0.3s ease-in-out;
+}
+header#default div#part-one nav ul a li#top-problem-list div#dropdown-menu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  background-color: #eeeeee;
+}
+header#default div#part-one nav ul a li#top-problem-list div#dropdown-menu ul {
+  display: block;
+}
+header#default div#part-one nav ul a li#top-problem-list div#dropdown-menu ul li {
+  font-size: 1em;
+  padding: 15px;
+  width: 300px;
+}
+header#default div#part-one nav ul a li#top-problem-list div#dropdown-menu ul li:hover {
+  background-color: white;
+  box-shadow: 0px 0px 3px #b9b9b9;
+}
+header#default div#part-one nav ul a li#top-problem-list:hover img {
+  transform: rotateX(180deg);
+}
+header#default div#part-one nav ul a li#top-problem-list:hover div#dropdown-menu {
+  display: flex;
+  justify-content: space-between;
+}
+header#default div#part-two div#share-knowledge-button {
+  border: 1.5px solid #fb8848;
+  color: #fb8848;
+  padding: 5px 20px;
+  border-radius: 3px;
+  margin-right: 20px;
+  font-size: 90%;
+}
+header#default div#part-two div#share-knowledge-button:hover {
+  background-color: #fb8848;
+  cursor: pointer;
+  color: white;
+}
+header#default div#part-two div#user-avatar img {
+  height: 30px;
+  border-radius: 50px;
+}
+
+header#responsive {
+  padding: 0 20px;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0px 0px 3px #b9b9b9;
+  background-color: white;
+}
+header#responsive div#upper {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+header#responsive div#upper div#hamburger {
+  width: 30px;
+  height: 18px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+header#responsive div#upper div#hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fb8848;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+header#responsive div#upper div#hamburger span:nth-child(1) {
+  top: 0px;
+}
+header#responsive div#upper div#hamburger span:nth-child(2) {
+  top: 9px;
+}
+header#responsive div#upper div#hamburger span:nth-child(3) {
+  top: 18px;
+}
+header#responsive div#upper div#hamburger.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+header#responsive div#upper div#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+header#responsive div#upper div#hamburger.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+header#responsive section#content {
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 25px;
+}
+header#responsive section#content ul#navigation a {
+  text-decoration: none;
+  color: black;
+}
+header#responsive section#content ul#navigation a li.list-item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+header#responsive section#content ul#navigation a li.list-item span#new-launch {
+  padding: 1px 2px;
+  border-radius: 3px;
+  font-size: 0.7em;
+  border: 1px solid #1b75f5;
+  background-color: #1b75f5;
+  color: white;
+}
+header#responsive section#content ul:not(:last-child) a li.list-item {
+  padding-bottom: 20px;
+}
+header#responsive section#content div#lower {
+  padding-bottom: 25px;
+}
+header#responsive section#content div#lower div#share-knowledge {
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 2px solid #fb8848;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+header#responsive section#content div#lower div#share-knowledge h3 {
+  color: #fb8848;
+  font-weight: lighter;
+}
+header#responsive section#content div#lower div#share-knowledge:hover {
+  background-color: #fb8848;
+}
+header#responsive section#content div#lower div#share-knowledge:hover h3 {
+  color: white;
+}
+header#responsive section#content div#lower div#user h6 {
+  font-weight: lighter;
+}
+header#responsive section#content div#lower div#user div#avatar {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+header#responsive section#content div#lower div#user div#avatar img {
+  height: 30px;
+  border-radius: 50px;
+}
+header#responsive section#content div#lower div#user div#logout {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: 2px solid #fb8848;
+  border-radius: 4px;
+  color: white;
+  background-color: #fb8848;
+  display: inline-block;
+  cursor: pointer;
+}
+header#responsive section#content.visible {
+  display: flex;
+}
+
+@media screen and (max-width: 1215px) {
+  header#default {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  header#default {
+    display: none;
+  }
+
+  header#responsive {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,475 @@
+main {
+    padding: 100px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    section.main-content {
+        margin-right: 20px;
+        div#popular-companies {
+            h3 {
+                text-transform: uppercase;
+            }
+            div#companies {
+                display: flex;
+                padding: 25px 0;
+                justify-content: space-between;
+                div.company-card {
+                    background-color: white;
+                    height: 100px;
+                    width: 180px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0px 0px 4px rgb(167, 167, 167);
+                    border-radius: 3px;
+                    transition: all 0.4s;
+                    cursor: pointer;
+                    img {
+                        padding: 0 4px;
+                        width: 130px;
+                    }
+                }
+                div.company-card:not(:last-child) {
+                    margin-right: 20px;
+                }
+                div.company-card:hover {
+                    transform: scale(1.03);
+                    box-shadow: 1px 1px 10px rgb(167, 167, 167);
+                }
+            }
+        }
+        div#interview-experiences {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0 45px 0;
+            h3 {
+                text-transform: uppercase;
+            }
+            h4 {
+                color: #fa7328;
+            }
+        }
+        div#filters {
+            padding-bottom: 30px;
+            div#part-one {
+                padding-bottom: 30px;
+                display: flex;
+                div.filter {
+                    h4 {
+                        width: max-content;
+                        cursor: pointer;
+                    }
+                }
+                div.filter:not(:last-child) {
+                    padding-right: 40px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            div#part-two {
+                background-color: white;
+                width: 50vw;
+                box-shadow: 0px 0px 8px rgb(167, 167, 167);
+                div#upper {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 40px;
+                    div#search {
+                        width: 60%;
+                        padding: 5px 10px;
+                        border: 1px solid grey;
+                        border-radius: 3px;
+                        display: flex;
+                        input {
+                            border: none;
+                            width: 100%;
+                            outline: none;
+                        }
+                    }
+                    h5 {
+                        color: #fa7328;
+                        cursor: pointer;
+                    }
+                }
+                div#lower {
+                    padding: 20px 40px;
+                    div {
+                        display: inline-block;
+                        div {
+                            background-color: rgb(238,238,238);
+                            padding: 5px 10px;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                            border-radius: 4px;
+                            span {
+                                text-transform: capitalize;
+                                font-weight: lighter;
+                            }
+                        }
+                    }
+                }
+                div#lower div.hidden{
+                    display: none;
+                }
+            }
+            div#part-two.hidden {
+                display: none;
+            }
+        }
+        div#experience-banners {
+            div.banner {
+                width: 50vw;
+                min-height: 150px;
+                display: flex;
+                background-color: white;
+                border-radius: 5px;
+                margin-bottom: 30px;
+                box-shadow: 0px 0px 4px rgb(167, 167, 167);
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                div#left-side {
+                    padding: 10px 40px;
+                    height: 100%;
+                    width: 50px;
+                    background-color: rgb(244, 244, 244);
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        height: 30px;
+                        color: white;
+                        margin-bottom: 5px;
+                        border-radius: 50px;
+                        box-shadow: 0px 0px 4px rgb(167, 167, 167);
+                    }
+                    h5 {
+                        font-weight: lighter;
+                    }
+                }
+                div#right-side {
+                    padding: 15px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    div#title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        img {
+                            height: 20px;
+                        }
+                        h3 {
+                            color: rgb(80, 80, 80);
+                        }
+                    }
+                    div#middle-box {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid rgb(192, 192, 192);
+                        padding-bottom: 15px;
+                        div#user {
+                            display: flex;
+                            div#avatar {
+                                img {
+                                    height: 40px;
+                                }
+                                margin-right: 10px;
+                            }
+                            div#details {
+                                h4 {
+                                    color: rgb(68, 68, 68)
+                                }
+                                div {
+                                    span {
+                                        color: grey;
+                                        padding-right: 20px;
+                                        font-size: 0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        div#result {
+                            display: flex;
+                            align-items: center;
+                            span {
+                                color: rgb(106,187,123);
+                                font-size: 0.8em;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    div#bottom-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        div#impression {
+                            display: flex;
+                            div {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            div.banner:hover {
+                transform: scale(1.01);
+                box-shadow: 1px 1px 10px rgb(167, 167, 167);
+            }
+        }
+    }
+    aside {
+        div#events {
+            width: 400px;
+            margin-bottom: 30px;
+            div#title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+            div#event-card {
+                background-color: white;
+                border-left: 1px solid rgb(221, 221, 221);
+                border-right: 1px solid rgb(221, 221, 221);
+                border-bottom: 1px solid rgb(221, 221, 221);
+                img {
+                    width: 100%;
+                }
+                div#event-details {
+                    padding: 15px;
+                    div#upper {
+                        div#timing {
+                            h6 {
+                                color: grey;
+                            }
+                            margin-top: 10px;
+                        }
+                    }
+                    div#lower {
+                        margin: 30px 0 20px 0;
+                        color: grey;
+                        font-size: 0.9em;
+                        display: flex;
+                        justify-content: space-between;
+                        h3 {
+                            color: #fa7328;
+                        }
+                    }
+                }
+            }
+        }
+        hr {
+            margin-bottom: 30px;
+        }
+        div#top-interview-experiences {
+            div#title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+            div#banners {
+                div.top-banner {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    border-radius: 5px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 12px 10px;
+                    transition: all 0.2s ease-in-out;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 4px rgb(167, 167, 167);
+                    h3 {
+                        font-weight: lighter;
+                    }
+                    div#user {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid rgb(167, 167, 167);
+                        padding: 10px;
+                        img {
+                            height: 40px;
+                            margin-right: 15px;
+                        }
+                        div {
+                            span {
+                                font-size: 0.75em;
+                                color: rgb(126, 126, 126);
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                    div#impression {
+                        margin-top: 10px;
+                        display: flex;
+                        div {
+                            display: flex;
+                            align-items: center;
+                            width: 100px;
+                        }
+                    }
+                }
+                div.top-banner:hover {
+                    transform: scale(1.01);
+                    box-shadow: 1px 1px 10px rgb(167, 167, 167);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    main {
+        flex-direction: column;
+        section.main-content {
+            div#experience-banners {
+                div.banner {
+                    width: 82vw;
+                }
+            }
+        }
+        aside {
+            width: 80vw;
+            align-self: center;
+            div#events {
+                width: 100%;
+            }
+            div#top-interview-experiences {
+                div#banners {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    div.top-banner {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        padding: 100px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    main {
+        aside {
+            div#top-interview-experiences {
+                div#banners {
+                    flex-direction: column;
+                    div.top-banner {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    main section.main-content div#filters div#part-two {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    main section.main-content div#filters div#part-two {
+        width: 75vw;
+    }
+    main section.main-content div#filters div#part-one div.filter:not(:last-child) {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    main section.main-content div#experience-banners div.banner div#right-side div#middle-box div#user div#details div span {
+        padding-right: 5px;
+    }
+    main {
+        padding-left: 55px;
+        section.main-content {
+            div#popular-companies {
+                h3 {
+                    text-transform: capitalize;
+                }
+                div#companies {
+                    div.company-card {
+                        height: 75px;
+                        img {
+                            width: 80px;
+                        }
+                    }
+                    div.company-card:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            div#interview-experiences {
+                display: block;
+                h3 {
+                    padding-bottom: 20px;
+                    text-transform: capitalize;
+                }
+            }
+            div#filters {
+                display: none;
+            }
+            div#experience-banners {
+                div.banner {
+                    div#left-side {
+                        display: none;
+                        p {
+                            color: white;
+                        }
+                    }
+                    div#right-side {
+                        div#title {
+                            h4 {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        padding: 75px 20px 25px 20px;
+        section.main-content {
+            div#popular-companies {
+                div#companies {
+                    div.company-card {
+                        height: 50px;
+                        img {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+        div#experience-banners {
+            div.banner {
+                div#right-side {
+                    div#middle-box {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        aside {
+            div#events {
+                width: 90vw;
+            }
+        }
+    }
+}
